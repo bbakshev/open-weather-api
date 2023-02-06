@@ -11,8 +11,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'eval-source-map',
-  devServer: {
-    contentBase: './dist'
+  devServer: {               
+    contentBase: './dist'    
   },
   plugins: [
     new ESLintPlugin(),
@@ -21,7 +21,7 @@ module.exports = {
       title: 'Shape Tracker',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
     new Dotenv()
   ],
   module: {
@@ -32,13 +32,7 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
-      },
-      {
-        test: /\.html$/,
-        use: [
-          'html-loader'
-        ]
-      },
+      }
     ]
   }
 };
