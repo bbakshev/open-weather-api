@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>Test</title>
+  <title>Weather</title>
 </head>
 <body>
-  <h1>Test</h1>
-  <img src="./assets/images/stock-puppy-photo.jpg" alt="such a pup!">
+  <div class="container">
+    <h1>Get Weather Conditions From Anywhere!</h1>
+    <p>To get the current weather conditions for a location, please enter the city name or the city and state separated by a comma. Here are three examples:</p>
+    <pre>
+      Portland
+      Atlanta, Georgia
+      Cairo
+    </pre>
+    <form>
+      <label for="location">Enter a location:</label>
+      <input id="location" type="text" name="location">
+      <button type="submit" class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    </form>
+    <p id="showResponse"></p>
+  </div>
 </body>
 </html>
